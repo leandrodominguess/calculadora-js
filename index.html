@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <span>
+            <div id="calculator">
+                <div id="grid_1">
+                    <button id="back_space" onclick="backspace()"><img src="svg/backspace.svg">&nbspBackspace</button>
+                    <p id="resultado_display"></p>
+                </div>
+                <div id="grid_2">
+                    <div><button id="ac" class="back_gray" onclick="clean()">AC</button></div>
+                    <div><button id="trocar_sinal" class="back_gray" onclick="trocasinal()">+/-</button></div>
+                    <div><button id="porcentagem" class="back_gray" onclick="insert('/100')">%</button></div>
+                    <div><button id="divisão" class="back_orange" onclick="insert('/')">/</button></div>
+                    <div><button id="7" class="back_dark_gray" onclick="insert('7')">7</button></div>
+                    <div><button id="8" class="back_dark_gray" onclick="insert('8')">8</button></div>
+                    <div><button id="9" class="back_dark_gray" onclick="insert('9')">9</button></div>
+                    <div><button id="multiplicação" class="back_orange" onclick="insert('*')">x</button></div>
+                    <div><button id="4" class="back_dark_gray" onclick="insert('4')">4</button></div>
+                    <div><button id="5" class="back_dark_gray" onclick="insert('5')">5</button></div>
+                    <div><button id="6" class="back_dark_gray" onclick="insert('6')">6</button></div>
+                    <div><button id="subtração" class="back_orange" onclick="insert('-')">-</button></div>
+                    <div><button id="1" class="back_dark_gray" onclick="insert('1')">1</button></div>
+                    <div><button id="2" class="back_dark_gray" onclick="insert('2')">2</button></div>
+                    <div><button id="3" class="back_dark_gray" onclick="insert('3')">3</button></div>
+                    <div><button id="soma" class="back_orange" onclick="insert('+')">+</button></div>
+                    <div id="zero_div"><button id="zero_btn" onclick="insert('0')"><span>0</span></button></div>
+                    <div><button id="ponto" class="back_dark_gray" onclick="insert('.')">.</button></div>
+                    <div><button id="resultado" class="back_orange" onclick="resultado_calculado()">=</button></div>
+                </div>
+            </div>
+        </span>
+    </div>
+</body>
+</html>
